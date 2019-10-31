@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 5
+   Review Assignment
+   
+   Author:   Rami Hadey
+   Date:    10/29/19 
+   
+   Filename: tf_print2.css
+
+   This file contains the printer styles used with the Trusted
+   Friends Parents Tips page
+
+*/
+
+
+
+/* Hidden Objects */
+
+/*step19*/
+nav, body > h1, section#left, footer{
+   display: none; 
+}
+
+
+/* Page Box Styles */
+ /*step20*/
+ @page{
+   size: 8.5in 11in;
+   margin: 0.5in;
+}
+
+
+/* Header Styles */
+
+/*step21*/
+img#logo {
+   display: block;
+   width: 100%;
+}
+
+/* Typography Styles */
+/*step22*/
+article header{
+   margin-bottom: 0.2in;
+}
+article h1{
+   font-size: 24pt;
+   line-height: 26pt;
+}
+aside{
+   background-color: rgb(211,211,211);
+   margin-top: 0.3in;
+}
+
+h1 h1{
+   font-size: 18pt;
+   line-height: 20pt;
+}
+
+aside img{
+   width: 0.8in;
+}
+
+p{
+   font-size: 12pt;
+   margin-top: 0.1in;
+   margin-bottom: 0.1in;
+}
+
+/* Hypertext Styles */
+
+/*step23*/
+a{
+   color: black;
+   text-decoration: none;
+}
+a::after{
+   content: " (" attr(href) ") ";
+   font-weight: bold;
+   word-wrap: break-word;
+}
+
+
+/* Page Break Styles */
+/*step24*/
+aside{
+   page-break-after: always;
+}
+ol,ul,img{
+   page-break-after: avoid;
+}
+p{
+   widows: 3;
+   orphans: 3;
+}
